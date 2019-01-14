@@ -1,0 +1,11 @@
+command:
+- ' jupyter nbconvert  --to html --output /output/mnist.html --execute GAN_Interface_2.ipynb
+  --ExecutePreprocessor.allow_errors=True --ExecutePreprocessor.timeout=-1 '
+gpu: true
+image: bash
+org: strudel
+persistent_paths:
+- host_path: /home/elad/Desktop/SPACE-GAN/ResNet/results
+  mount_path: /output
+project: '5491823292186624'
+queue: local
