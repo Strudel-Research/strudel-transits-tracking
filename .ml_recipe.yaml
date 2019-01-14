@@ -1,0 +1,7 @@
+command:
+- env; ls /code
+gpu: true
+image: bash
+org: strudel
+project: '5491823292186624'
+queue: local
