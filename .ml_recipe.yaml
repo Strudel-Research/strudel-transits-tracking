@@ -1,9 +1,9 @@
 command:
-- env;  jupyter kernelspec list; jupyter nbconvert  --to html --output /output/$ML_JOB_ID.html
+- env; pip install h5py; jupyter kernelspec list; jupyter nbconvert  --to html --output /output/$ML_JOB_ID.html
   --execute GAN_Interface_2-Copy1.ipynb --ExecutePreprocessor.allow_errors=True --ExecutePreprocessor.timeout=-1
   --ExecutePreprocessor.kernel_name=python2
 gpu: true
-image: missinglinkai/tensorflow:1.1.0-devel-gpu
+image: missinglinkai/tensorflow:1.1.0-gpu
 org: strudel
 persistent_paths:
 - host_path: /home/elad/Desktop/SPACE-GAN/Data
